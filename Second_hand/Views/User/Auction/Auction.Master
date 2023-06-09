@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Auction.master.cs" Inherits="Second_hand.Views.Auction.Auction" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../../../Source/lib/css/bootstrap.min.css" />
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-success bg-success">
+     <div class="container-fluid">
+     <a class="navbar-brand text-light" href="#">School</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../Auction/looking.aspx">浏览</a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link text-light" href="../Auction/addgrides.aspx">添加</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../add_auction.aspx">返回</a>
+        </li>
+        
+      </ul>
+ 
+    </div>
+  </div>
+</nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</body>
+</html>
